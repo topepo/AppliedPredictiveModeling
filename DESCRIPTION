@@ -7,7 +7,7 @@ Author: Max Kuhn, Kjell Johnson
 Maintainer: Max Kuhn <mxkuhn@gmail.com>
 Description: A few functions and several data set for the Springer book 'Applied Predictive Modeling'.
 URL: http://appliedpredictivemodeling.com/
-Depends: R (>= 2.10) 
+Depends: R (>= 2.10)
 Imports: CORElearn, MASS, plyr, reshape2, lattice, ellipse
 Suggests: caret (>= 6.0-22)
 License: GPL-2
