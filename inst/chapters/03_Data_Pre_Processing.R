@@ -89,6 +89,7 @@ histogram(~segTrainTrans$PerimCh1,
 ## R's prcomp is used to conduct PCA
 pr <- prcomp(~ AvgIntenCh1 + EntropyIntenCh1, 
              data = segTrainTrans, 
+             center = TRUE,
              scale. = TRUE)
 
 transparentTheme(pchSize = .7, trans = .3)
