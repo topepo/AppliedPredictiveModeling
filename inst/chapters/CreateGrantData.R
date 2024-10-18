@@ -488,6 +488,7 @@ reducedSet <- reducedSet[(reducedSet != "allPub") &
                          (reducedSet != "Sun")
                          ]
 str(reducedSet)
-
+save(fullSet, reducedSet, training, testing, pre2008,
+     file = "grantData.RData")
 sessionInfo()
 
