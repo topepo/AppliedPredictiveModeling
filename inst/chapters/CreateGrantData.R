@@ -254,6 +254,10 @@ investPhD <- ddply(vertical, .(Grant.Application.ID),
 investPhD <- investPhD[,-grep("\\.$", names(investPhD))]
 names(investPhD) <- shortNames(names(investPhD))
 names(investPhD) <- gsub("Yes ", "PhD", names(investPhD))
+mycols <- grep(".PhD", names(investPhD), value = TRUE)
+for (acol in mycols){
+  investPhD[, acol] <- replace(investPhD[, acol], is.na(investPhD[, acol]), 0)
+}                
 investPhD <- noZV(investPhD)
 
 ######################################################################
