@@ -58,7 +58,7 @@ indx <- createFolds(solTrainY, returnTrain = TRUE)
 ## Find the predictors that are not fingerprints
 contVars <- names(solTrainX)[!grepl("FP", names(solTrainX))]
 ## Some have zero values, so we need to add one to them so that
-## we can use the Box-Cox transformation. Alternatively, we could 
+## we can use the Box-Cox transformation. Alternatively, we could
 ## use the Yeo-Johnson transformation without altering the data.
 contPredTrain <- solTrainX[,contVars] + 1
 contPredTest  <-  solTestX[,contVars] + 1

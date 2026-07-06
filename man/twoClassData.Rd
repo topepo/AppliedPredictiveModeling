@@ -18,9 +18,9 @@ samples are labeled as \code{Class1} and the remaining 97 are \code{Class2}.
 data(twoClassData)
 
 library(lattice)
-xyplot(PredictorB ~ PredictorA, 
-       data = predictors, 
-       groups = classes, 
+xyplot(PredictorB ~ PredictorA,
+       data = predictors,
+       groups = classes,
        auto.key = TRUE)
 
 
